@@ -35,6 +35,15 @@ header a {
     font-weight: bold;
 }
 
+.btn-hamburguesa {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
 section {
     background-color: white;
     padding: 20px;
@@ -48,7 +57,7 @@ h1, h2 {
     margin-top: 0;
 }
 
-label, input, textarea, button {
+label, input, textarea {
     display: block;
     width: 100%;
     max-width: 400px;
@@ -61,12 +70,11 @@ input, textarea {
     border-radius: 4px;
 }
 
-button {
-    background-color: #013998;
+.boton-modo {
+    background-color: #98bf61;
     color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
+    display: block;
+    margin: 10px auto;
 }
 
 footer {
@@ -75,10 +83,56 @@ footer {
     font-size: 14px;
 }
 
+.body.claro {
+    background-color: #b7cef8;
+    color: #17233b;
+}
+
+.body claro header {
+    background-color: #013998;
+    color: black;
+}
+
+.body claro header p {
+    color: #130e0e;
+}
+
+body.claro nav {
+    background-color: #485162;
+}
+
+.modo-oscuro {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.modo-oscuro header {
+    background-color: #000000;
+}
+
+.modo-oscuro section {
+    background-color: #242424;
+    border-color: #444;
+}
+
+.modo-oscuro h1, .modo-oscuro h2 {
+    color: #79a6ff;
+}
+
 @media (max-width: 600px) {
+    .btn-hamburguesa {
+        display: inline-block;
+    }
+
     header ul {
+        display: none;
         flex-direction: column;
         gap: 12px;
+        margin-top: 15px;
+    }
+
+    header ul.mostrar-menu {
+        display: flex;
     }
     
     section {
