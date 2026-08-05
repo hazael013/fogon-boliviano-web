@@ -39,7 +39,7 @@
         </section>
         <section>
             <h2>Contacto</h2>
-            <form>
+            <form id="form-contacto" novalidate>
                 <label for="nombre">Tu nombre</label>
                 <input type="text" id="nombre" required>
 
@@ -53,6 +53,7 @@
                 <textarea id="msg" placeholder="Escribe tu mensaje aquí..." required></textarea>
 
                 <button type="submit">Enviar</button>
+                <p id="aviso-contacto" class="aviso"></p>
             </form>
         </section>
     </main>

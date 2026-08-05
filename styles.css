@@ -119,6 +119,28 @@ body.claro nav {
     color: #79a6ff;
 }
 
+.aviso {
+    display: none;
+    margin-top: 14px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.aviso.error {
+    display: block;
+    background-color: #ffe6e6;
+    color: #cc0000;
+    border-left: 4px solid #cc0000;
+}
+
+.aviso.exito {
+    display: block;
+    background-color: #e6ffe6;
+    color: #006600;
+    border-left: 4px solid #006600;
+}
+
 @media (max-width: 600px) {
     .btn-hamburguesa {
         display: inline-block;
