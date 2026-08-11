@@ -1,0 +1,164 @@
+body {
+    background-color: #f8f9fb;
+    color: #17233b;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+header {
+    background-color: #013998;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+header li {
+    list-style: none;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-hamburguesa {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #013998;
+    margin-top: 0;
+}
+
+label, input, textarea {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.boton-modo {
+    background-color: #98bf61;
+    color: white;
+    display: block;
+    margin: 10px auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.body.claro {
+    background-color: #b7cef8;
+    color: #17233b;
+}
+
+.body claro header {
+    background-color: #013998;
+    color: black;
+}
+
+.body claro header p {
+    color: #130e0e;
+}
+
+body.claro nav {
+    background-color: #485162;
+}
+
+.modo-oscuro {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.modo-oscuro header {
+    background-color: #000000;
+}
+
+.modo-oscuro section {
+    background-color: #242424;
+    border-color: #444;
+}
+
+.modo-oscuro h1, .modo-oscuro h2 {
+    color: #79a6ff;
+}
+
+.aviso {
+    display: none;
+    margin-top: 14px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.aviso.error {
+    display: block;
+    background-color: #ffe6e6;
+    color: #cc0000;
+    border-left: 4px solid #cc0000;
+}
+
+.aviso.exito {
+    display: block;
+    background-color: #e6ffe6;
+    color: #006600;
+    border-left: 4px solid #006600;
+}
+
+@media (max-width: 600px) {
+    .btn-hamburguesa {
+        display: inline-block;
+    }
+
+    header ul {
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    header ul.mostrar-menu {
+        display: flex;
+    }
+    
+    section {
+        margin: 10px 0;
+        padding: 15px;
+    }
+}
